@@ -306,7 +306,6 @@ async function asyncSystemScan(effectiveJavaOptions, launchAfter = true){
 
     const jvmDetails = await discoverBestJvmInstallation(
         ConfigManager.getDataDirectory(),
-        effectiveJavaOptions.supported
     )
 
     if(jvmDetails == null) {
